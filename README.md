@@ -25,6 +25,11 @@ Project #1: shell
  
 Project #2: producer-consumer
 -----
+**Description**: This project involves solving the multi-process synchronization producer/consumer problem using thread programming, shared memory, and synchronization. The producer (one thread) generates data and puts it into a shared buffer while at the same time multiple consumers (multiple threads) are consuming the data. To synchronize access to shared data, semaphores (both binary and counting) were used.
+
 Project #3: message-passing
 -----
+**Description**: This project involves implementing a client-server architecture. Here, the client recieves transactions that they are to pass to the server to process, the server then responds to the client with an indication on how the sent transaction. The server in this project had a specified backlog of 10 clients.
+
+
 
