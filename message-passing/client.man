@@ -1,0 +1,47 @@
+.TH CLIENT 1 "November 25, 2021" "Client-Side Manual"
+.SH NAME
+.TP
+client \- this program connects the client to a server to send transactions to be done by the server or sleep. 
+.SH SYNOPSIS
+.TP
+client \fIport_num\fP \fIip_address\fP [ < \fIinput_file\fP ]
+.SH DESCRIPTION
+.TP
+.B client 
+runs a client program that accepts a \fIport\fP and \fIip_address\fP and an optional \fIinput_file\fP
+.TP
+.B port 
+the port number that the server is using and you wish to connect to, ranging between 5000 to 64000.
+.TP
+.B ip_address 
+ip address that the server is running on and you wish to connect the client to.
+.TP
+.B input_file 
+an optional parameter of a file that contains T<int> and S<int> commands that will executed by the server and client respectively. If no file is inputted, the program will take S<int> and T<int> commands from the command line with CTRL-D terminating the input sequence.
+.SH FILES
+.TP
+\fRMakefile
+compiles the programs
+.TP
+\fRclient.cpp
+this is the source code for client-related functionality to send transactions to be completed by the server and recieve done IDs.
+.TP
+\fRtands.cpp
+contains the two functions executed in this assignment.
+.SH EXAMPLE
+.TP
+client 20000 127.0.0.1 <client.in
+.TP
+Here 20000 is the port number, 127.0.0.1 is the ip address and client.in is the file containing T<int> and S<int> commands.
+.TP
+client 20000 127.0.0.1
+.TP
+Here, all T<int> and S<int> commands will come from the terminal.
+.SH NOTES
+.TP
+The server has a backlog of 10 clients.
+.TP
+CTRL-D needs to be used to terminate the client after entering commands from the terminal.   
+.SH AUTHOR
+.TP
+Amro Amanuddein

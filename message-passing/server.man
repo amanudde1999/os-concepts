@@ -1,0 +1,35 @@
+.TH SERVER 1 "November 25, 2021" "Server-Side Manual"
+.SH NAME
+.TP
+server \- this program establishes a server on a specified port for clients to connect to. 
+.SH SYNOPSIS
+.TP
+server \fIport\fP 
+.SH DESCRIPTION
+.TP
+.B server 
+runs the server program that accepts a \fIport\fP to establish the server on.
+.TP
+.B port 
+the port number that the server will use, ranging between 5000 to 64000.
+.SH FILES
+.TP
+\fRMakefile
+compiles the programs
+.TP
+\fRserver.cpp
+this is the source code for client-related functionality to send transactions to be completed by the server and recieve done IDs.
+.TP
+\fRtands.cpp
+contains the two functions executed in this assignment.
+.SH EXAMPLE
+.TP
+server 20000
+.TP
+This command will establish a server with port number 20000.
+.SH NOTES
+.TP
+The server has a backlog of 10 clients.
+.SH AUTHOR
+.TP
+Amro Amanuddein
